@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e5c9ab80;
+}
+
+/* Navbar Styling */
+.navbar {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Styling */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* Adjusted Center Date Styling */
+.navbar-date {
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Nav Links Styling */
+.nav-link {
+    font-size: 1.2rem;
+    color: #000 !important;
+}
+
+.nav-link:hover {
+    color: #ff6600 !important;
+}
+
+/* Hero Section */
+.jumbotron {
+    background: url('coachella.avif') center/cover no-repeat;
+    height: 100vh;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 2;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e5c9ab80; /* Dark overlay for text contrast */
+    z-index: 1;
+}
+
+/* Hero Text */
+.jumbotron h1 {
+    font-size: 4rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.jumbotron p.lead {
+    font-size: 1.5rem;
+}
+
+.jumbotron .btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+}
+
+/* Lineup Section */
+section {
+    margin: 4rem 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Gallery */
+.gallery img {
+    margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Custom Button Styling */
+.custom-btn {
+    background-color: #da7933eb; /* Custom background color */
+    color: rgb(18, 17, 17);      /* Text color */
+    border: none;                /* Remove the border */
+    font-size: 1.2rem;           /* Font size */
+    padding: 0.75rem 2rem;       /* Padding */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.custom-btn:hover {
+    background-color: #ff9900; /* Change background color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-date {
+        display: none; /* Hide the date on smaller screens */
+    }
+}
